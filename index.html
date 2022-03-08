@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700&display=swap" rel="stylesheet"> -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <script defer src="fontawesome/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader-container" style="display: none;">
+        <div class="loader-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <header class="header-area border-bottom border-bottom-gray">
+        <div class="main-header py-3 fixed-top">
+            <div class="container">
+                <div class="main-header-action-wrap">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="main-header">
+                        <nav class="main-menu mr-4 ml-auto">
+                            <ul>
+                                <li>
+                                    <a href="#">Home <span class="fas fa-angle-down"></span></a>
+                                    <ul class="dropdown-menu-item">
+                                        <li><a href="index.html">home one</a></li>
+                                        <li><a href="index2.html">home two</a></li>
+                                        <li><a href="index3.html">home three</a></li>
+                                        <li><a href="index4.html">home four</a></li>
+                                        <li><a href="index5.html">home five</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Categories <span class="fas fa-angle-down"></span></a>
+                                    <ul class="dropdown-menu-item">
+                                        <li><a href="all-categories.html">all categories</a></li>
+                                        <li><a href="all-locations.html">all locations</a></li>
+                                        <li><a href="top-place.html">top places </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Listings <span class="fas fa-angle-down"></span></a>
+                                    <ul class="dropdown-menu-item">
+                                        <li><a href="listing-grid.html">listing grid</a></li>
+                                        <li><a href="list-with-map.html">list with map</a></li>
+                                        <li><a href="grid-with-map.html">grid with map</a></li>
+                                        <li><a href="listing-list.html">listing list </a></li>
+                                        <li><a href="list-left-sidebar.html">left sidebar  </a></li>
+                                        <li><a href="list-right-sidebar.html">right sidebar  </a></li>
+                                        <li><a href="listing-details.html">listing details</a></li>
+                                        <li><a href="add-listing.html">add listing</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Pages <span class="fas fa-angle-down"></span></a>
+                                    <ul class="dropdown-menu-item">
+                                        <li><a href="user-profile.html">user profile</a></li>
+                                        <li><a href="top-author.html">top authors </a></li>
+                                        <li><a href="dashboard.html">dashboard</a></li>
+                                        <li><a href="booking.html">booking  </a></li>
+                                        <li><a href="booking-confirmation.html">booking confirmation </a></li>
+                                        <li><a href="invoice.html">invoice</a></li>
+                                        <li><a href="pricing.html">pricing</a></li>
+                                        <li><a href="about.html">about</a></li>
+                                        <li><a href="faq.html">faq</a></li>
+                                        <li><a href="contact.html">contact</a></li>
+                                        <li><a href="page-404.html">404 page</a></li>
+                                        <li><a href="recover.html">recover pass</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Blog <span class="fas fa-angle-down"></span></a>
+                                    <ul class="dropdown-menu-item">
+                                        <li><a href="blog-full-width.html">full width</a></li>
+                                        <li><a href="blog-grid.html">blog grid</a></li>
+                                        <li><a href="blog-left-sidebar.html">left sidebar </a></li>
+                                        <li><a href="blog-right-sidebar.html">right sidebar </a></li>
+                                        <li><a href="blog-single.html">blog detail</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="nav-right-content d-flex align-items-center">
+                            <div class="author-access-list mr-3">
+                                <a href="login.html">Login</a>
+                                <span class="or-text">or</span>
+                                <a href="sign-up.html">Sign Up</a>
+                            </div>
+                            <a href="add-listing.html" class="theme-btn">
+                                <span class="fas fa-plus mr-1"></span>
+                                Add Listing
+                            </a>
+                            <div class="side-menu-open ml-2">
+                                <i class="fal fa-bars"></i>
+                            </div><!-- end side-menu-open -->
+                        </div>
+                    </div>
+                </div><!-- end main-header-action-wrap -->
+            </div><!-- end container-fluid -->
+        </div><!-- end main-header -->
+        <div class="off-canvas">
+            <div class="off-canvas-close icon-element icon-element-sm bg-white shadow-sm">
+                <i class="fal fa-times"></i>
+            </div>
+            <ul class="off-canvas-menu padding-top-60px">
+                <li>
+                    <a href="#">Home <span class="fal fa-angle-down sub-menu-toggler"></span></a>
+                    <ul class="off-canvas-sub-menu">
+                        <li><a href="index.html">Home one</a></li>
+                        <li><a href="index2.html">Home two  </a></li>
+                        <li><a href="index3.html">Home three</a></li>
+                        <li><a href="index4.html">Home four</a></li>
+                        <li><a href="index5.html">Home five</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Categories <span class="fal fa-angle-down sub-menu-toggler"></span></a>
+                    <ul class="off-canvas-sub-menu">
+                        <li><a href="all-categories.html">All categories</a></li>
+                        <li><a href="all-locations.html">All locations</a></li>
+                        <li><a href="top-place.html">Top places </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Listings <span class="fal fa-angle-down sub-menu-toggler"></span></a>
+                    <ul class="off-canvas-sub-menu">
+                        <li><a href="listing-grid.html">Listing grid</a></li>
+                        <li><a href="list-with-map.html">list with map</a></li>
+                        <li><a href="grid-with-map.html">grid with map</a></li>
+                        <li><a href="listing-list.html">Listing list  </a></li>
+                        <li><a href="list-left-sidebar.html">Left sidebar  </a></li>
+                        <li><a href="list-right-sidebar.html">Right sidebar </a></li>
+                        <li><a href="listing-details.html">Listing details</a></li>
+                        <li><a href="add-listing.html">Add listing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Pages <span class="fal fa-angle-down sub-menu-toggler"></span></a>
+                    <ul class="off-canvas-sub-menu">
+                        <li><a href="user-profile.html">user profile</a></li>
+                        <li><a href="top-author.html">top authors </a></li>
+                        <li><a href="dashboard.html">dashboard</a></li>
+                        <li><a href="booking.html">booking  </a></li>
+                        <li><a href="booking-confirmation.html">booking confirmation </a></li>
+                        <li><a href="invoice.html">invoice</a></li>
+                        <li><a href="pricing.html">pricing</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="faq.html">faq</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="page-404.html">404 page</a></li>
+                        <li><a href="recover.html">recover pass</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">blog <span class="fal fa-angle-down sub-menu-toggler"></span></a>
+                    <ul class="off-canvas-sub-menu">
+                        <li><a href="blog-full-width.html">full width</a></li>
+                        <li><a href="blog-grid.html">blog grid</a></li>
+                        <li><a href="blog-left-sidebar.html">left sidebar </a></li>
+                        <li><a href="blog-right-sidebar.html">right sidebar </a></li>
+                        <li><a href="blog-single.html">blog detail</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="mt-4 text-center">
+                <a href="login.html" class="theme-btn mr-2">Login</a>
+                <a href="sign-up.html" class="theme-btn">Sign up</a>
+            </div>
+        </div>      
+    </header>
+
+    <section class="hero-wrapper hero-bg">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-heading text-center">
+                <h2 class="sec_tittle text-white cd-headline zoom">
+                    What are you interested in
+                    <span  class="cd-words-wrapper" style="width: 271.225px;">
+                        <b class="is-hidden">Hotels</b>
+                        <b class="is-hidden">Restaurants</b>
+                        <b class="is-hidden">Shops</b>
+                        <b class="is-hidden">Salons</b>
+                        <b class="is-hidden">Apartments</b>
+                        <b class="is-hidden">Travels</b>
+                        <b class="is-hidden">Business</b>
+                        <b class="is-hidden">Fitness</b>
+                    </span>
+                    <p class="sec__desc text-white">
+                        Discover the best places to stay, eat, shop & visit the city nearest to you.
+                    </p>
+                </h2>
+            </div>
+            <div class="card mt-5">
+                <div class="card-body row pb-0">
+                    <div class="col-lg-3 pr-lg-0">
+                        <div class="form-group">
+                            <span class="fas fa-search form-icon"></span>
+                            <input class="form-control form--control" type="text" placeholder="What are you looking for?">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 pr-lg-0">
+                        <div class="form-group">
+                            <span class="fas fa-map-marker-alt form-icon"></span>
+                            <input class="form-control form--control" type="text" placeholder="Location">
+                        </div><!-- end form-group -->
+                    </div>
+                    <div class="col-lg-3 pr-lg-0">
+                        <div class="form-group">
+                            <div class="dropdown bootstrap-select select-picker" style="width: 100%;">
+                                <select class="select-picker" data-width="100%" data-size="5">
+                                    <option value >Select a Category</option>
+                                    <option value="1">Shops</option>
+                                    <option value="2">Hotels</option>
+                                    <option value="3">Foods & Restaurants</option>
+                                    <option value="4">Fitness</option>
+                                    <option value="5">Travel</option>
+                                    <option value="6">Salons</option>
+                                    <option value="7">Event</option>
+                                    <option value="8">Business</option>
+                                </select>
+                                <button type="button" class="btn dropdown-toggle btn-light bs-placeholder" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" 
+                                aria-haspopup="listbox" aria-expanded="false" title="Select a Category">
+                                <div class="filter-option">
+                                    <div class="filter-option-inner">
+                                        <div class="filter-option-inner-inner">Select a Category</div>
+                                    </div>
+
+                                </div>
+                                </button>
+                            </div>
+                        </div><!-- end form-group -->
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-group">
+                            <button class="theme-btn border-0 w-100" type="submit">Search</button>
+                        </div><!-- end form-group -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
