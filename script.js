@@ -70,22 +70,18 @@
 //   }
 // }
 
-const list=["Hotels","Restaurants","Shops","Salons","Apartments","Travels"];
-var x=document.getElementById('demo').innerHTML=list;
-for (let i = 0; i < list.length; i++) {
-  list[1].style.visibility="hidden"
-  
-  
-  
-}
-// function  my_fonksiyon(){
-
-//   list.forEach(item => {
-//     var yazi = document.getElementById('deneme');
-//     yazi = yazi +item;
-//     document.getElementById('deneme').innerhtml = yazi;
-
-
-    
-//   });
+// const list=["Hotels","Restaurants","Shops","Salons","Apartments","Travels"];
+// var x=document.getElementById('demo').innerHTML=list;
+// for (let i = 0; i < list.length; i++) {
+//   list[1].style.visibility="hidden"
 // }
+
+
+const words=["Hotels","Restaurants","Shops","Salons","Apartments","Travels","Business","Fitness"];
+const element=document.getElementById('word');
+setInterval(() => {
+  let word_index=Math.floor(Math.random() * words.length);
+  element.innerHTML=`${words[word_index]}</p>`
+}, 1000);
+
+
