@@ -1,4 +1,4 @@
-Dirto sitesinin clonelanmış hali.
+A cloned version of the Dirto site. I wrote it with Html, Css and Javascript.
 
 ![image](https://github.com/nermindonat/dirto-clone/assets/70170606/88efb882-3bc9-452f-837c-d90ded9dfa4b)
 
